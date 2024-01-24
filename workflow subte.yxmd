@@ -1,0 +1,2202 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1641" y="1495" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2082" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\tcabreraro001\Downloads\molinetes_subte\full dataset.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>full dataset.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2025" y="1099" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_eb1669dda65d4453bfd149f8eface6a5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1785" y="1483" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="FECHA" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FECHA - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1890" y="1398" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>FECHA</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-12-18 20:38:08</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2023-12-18</Operand>
+              <StartDate>2023-12-18 20:38:08</StartDate>
+              <EndDate>2023-12-18 20:38:08</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([FECHA])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1977" y="1603" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_bfc8ec93af1442e18bf16763c22d839d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2337" y="1363" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>tengo 80 mil valores nulos que representan un 0.0015% del dataset lo cual altera minimamente</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1986" y="1326" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>LINEA</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-12-19 15:32:57</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2023-12-19 15:32:57</StartDate>
+              <EndDate>2023-12-19 15:32:57</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([LINEA])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="380" y="1050" width="601" height="324" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2021</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="405" y="1207" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>;</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>historico_2021.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="periodo" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="FECHA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="DESDE" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="HASTA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="LINEA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="MOLINETE" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="ESTACION" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="pax_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="pax_pases_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="pax_franq" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+                <Field name="pax_TOTAL" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2021\historico_2021.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="513" y="1219" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="periodo" selected="False" />
+                <SelectField field="DESDE" selected="True" type="Time" size="8" />
+                <SelectField field="HASTA" selected="True" type="Time" size="8" />
+                <SelectField field="MOLINETE" selected="False" type="String" size="254" />
+                <SelectField field="ESTACION" selected="True" type="String" size="254" />
+                <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_TOTAL" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="597" y="1243" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>FECHA</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>FECHA</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert FECHA From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="693" y="1147" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FECHA] &lt; "2021-31-03"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FECHA] &lt; "2021-31-03"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="777" y="1135" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FECHA" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="669" y="1243" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FECHA2" selected="True" rename="FECHA" />
+                <SelectField field="FECHA" selected="False" />
+                <SelectField field="DESDE" selected="True" />
+                <SelectField field="HASTA" selected="True" />
+                <SelectField field="LINEA" selected="True" />
+                <SelectField field="MOLINETE" selected="True" />
+                <SelectField field="ESTACION" selected="True" />
+                <SelectField field="pax_pagos" selected="True" />
+                <SelectField field="pax_pases_pagos" selected="True" />
+                <SelectField field="pax_franq" selected="True" />
+                <SelectField field="pax_TOTAL" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="897" y="1171" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="693" y="1099" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Filtro los datos de febrero y marzo para no perderlos dado que ya venian dados en el formato correcto</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="585" y="1147" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[FECHA] &gt; "2021-01-02"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[FECHA] &gt; "2021-01-02"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="789" y="1255" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNull</Operator>
+                <Field>FECHA</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-12-18 17:17:54</PeriodDate>
+                  <PeriodType>days</PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2023-12-18</Operand>
+                  <StartDate>2023-12-18 17:17:54</StartDate>
+                  <EndDate>2023-12-18 17:17:54</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IsNull([FECHA])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="53" width="226" height="166" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2018</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="81" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>molinetes-subte-18.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="fecha" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="desde" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="hasta" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="linea" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="molinete" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="estacion" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="pax_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="pax_pases_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="pax_franq" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="total" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+                <Field name="periodo" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2018\molinetes-subte-18.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="198" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="fecha" selected="True" rename="FECHA" type="Date" size="10" />
+                <SelectField field="desde" selected="True" rename="DESDE" type="Time" size="8" />
+                <SelectField field="hasta" selected="True" rename="HASTA" type="Time" size="8" />
+                <SelectField field="linea" selected="True" rename="LINEA" type="WString" size="254" />
+                <SelectField field="molinete" selected="False" rename="MOLINETE" type="String" size="254" />
+                <SelectField field="estacion" selected="True" rename="ESTACION" type="String" size="254" />
+                <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                <SelectField field="total" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                <SelectField field="periodo" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53" y="1433" width="987" height="803" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2022</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="957" y="1771" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="813" y="1831" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>FULL 2022 DATASET</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="79" y="1482" width="546" height="240" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>2022 mes 6 y 9</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="17">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+                <Position x="104" y="1531" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Directory>C:\Users\tcabreraro001\Desktop\probando\2022 diferente campo</Directory>
+                  <FileSpec>*.*</FileSpec>
+                  <IncludeSubDirs value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>dir C:\Users\tcabreraro001\Desktop\probando\2022 diferente campo\*.*</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+            </Node>
+            <Node ToolID="18">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+                <Position x="212" y="1531" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <InputConfiguration>
+                    <Configuration>
+                      <Passwords />
+                      <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Desktop\probando\2022 diferente campo\202206_PAX15min-ABC.csv</File>
+                      <FormatSpecificOptions>
+                        <HeaderRow>True</HeaderRow>
+                        <IgnoreErrors>False</IgnoreErrors>
+                        <AllowShareWrite>False</AllowShareWrite>
+                        <ImportLine>1</ImportLine>
+                        <FieldLen>254</FieldLen>
+                        <SingleThreadRead>False</SingleThreadRead>
+                        <IgnoreQuotes>False</IgnoreQuotes>
+                        <Delimeter>;</Delimeter>
+                        <QuoteRecordBreak>False</QuoteRecordBreak>
+                        <CodePage>28591</CodePage>
+                      </FormatSpecificOptions>
+                    </Configuration>
+                  </InputConfiguration>
+                  <Mode>ReadList</Mode>
+                  <ReadList_Field>FullPath</ReadList_Field>
+                  <ReadList_Type>Path</ReadList_Type>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+            </Node>
+            <Node ToolID="19">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="296" y="1531" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="&quot;HORA" selected="False" />
+                    <SelectField field="DIA" selected="False" />
+                    <SelectField field="TIPO_DIA" selected="False" />
+                    <SelectField field="¿Fuera de rango?" selected="False" />
+                    <SelectField field="DESDE" selected="True" type="Time" size="8" />
+                    <SelectField field="HASTA" selected="True" type="Time" size="8" />
+                    <SelectField field="MOLINETE" selected="False" type="String" size="254" />
+                    <SelectField field="ESTACION" selected="True" type="String" size="254" />
+                    <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_TOTAL&quot;" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="20">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+                <Position x="392" y="1531" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <IsFrom value="False" />
+                  <InputFieldName>FECHA</InputFieldName>
+                  <Language>English</Language>
+                  <Format>dd/MM/yyyy</Format>
+                  <OutputFieldName>FECHA</OutputFieldName>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Convert FECHA From:
+Custom</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+            </Node>
+            <Node ToolID="21">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="476" y="1531" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="FECHA2" selected="True" rename="FECHA" />
+                    <SelectField field="FECHA" selected="False" />
+                    <SelectField field="DESDE" selected="True" />
+                    <SelectField field="HASTA" selected="True" />
+                    <SelectField field="LINEA" selected="True" />
+                    <SelectField field="MOLINETE" selected="True" />
+                    <SelectField field="ESTACION" selected="True" />
+                    <SelectField field="pax_pagos" selected="True" />
+                    <SelectField field="pax_pases_pagos" selected="True" />
+                    <SelectField field="pax_franq" selected="True" />
+                    <SelectField field="pax_TOTAL" selected="True" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="23">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="500" y="1615" width="100" height="40" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Agrego algunos archivos que me faltaban</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="80" y="1722" width="721" height="240" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption><![CDATA[2022 mes 11, 12  y algunos ]]></Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+                <Position x="105" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Directory>C:\Users\tcabreraro001\Desktop\probando\2022 diferente formato</Directory>
+                  <FileSpec>*.*</FileSpec>
+                  <IncludeSubDirs value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>dir C:\Users\tcabreraro001\Desktop\probando\2022 diferente formato\*.*</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+                <Position x="248" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <InputConfiguration>
+                    <Configuration>
+                      <Passwords />
+                      <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Desktop\probando\2022 diferente formato\202204_PAX15min-DEH.csv</File>
+                      <FormatSpecificOptions>
+                        <HeaderRow>True</HeaderRow>
+                        <IgnoreErrors>False</IgnoreErrors>
+                        <AllowShareWrite>False</AllowShareWrite>
+                        <ImportLine>1</ImportLine>
+                        <FieldLen>254</FieldLen>
+                        <SingleThreadRead>False</SingleThreadRead>
+                        <IgnoreQuotes>False</IgnoreQuotes>
+                        <Delimeter>;</Delimeter>
+                        <QuoteRecordBreak>False</QuoteRecordBreak>
+                        <CodePage>28591</CodePage>
+                      </FormatSpecificOptions>
+                    </Configuration>
+                  </InputConfiguration>
+                  <Mode>ReadList</Mode>
+                  <ReadList_Field>FullPath</ReadList_Field>
+                  <ReadList_Type>Path</ReadList_Type>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="369" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="&quot;FECHA" selected="True" rename="FECHA" />
+                    <SelectField field="DESDE" selected="True" type="Time" size="8" />
+                    <SelectField field="HASTA" selected="True" type="Time" size="8" />
+                    <SelectField field="MOLINETE" selected="False" type="String" size="254" />
+                    <SelectField field="ESTACION" selected="True" type="String" size="254" />
+                    <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_TOTAL&quot;" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="28">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="525" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="ReplaceFirst([FECHA], '&quot;', &quot;&quot;)" field="FECHA" size="254" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[FECHA = ReplaceFirst([FECHA], '"', "")
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="29">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+                <Position x="621" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <IsFrom value="False" />
+                  <InputFieldName>FECHA</InputFieldName>
+                  <Language>English</Language>
+                  <Format>dd/MM/yyyy</Format>
+                  <OutputFieldName>FECHA</OutputFieldName>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Convert FECHA From:
+Custom</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+            </Node>
+            <Node ToolID="31">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="393" y="1867" width="100" height="40" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Unirlo con el workflow de 2022 ya que contiene los meses de diciembre</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="32">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="717" y="1771" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="FECHA2" selected="True" rename="FECHA" />
+                    <SelectField field="FECHA" selected="False" />
+                    <SelectField field="DESDE" selected="True" />
+                    <SelectField field="HASTA" selected="True" />
+                    <SelectField field="LINEA" selected="True" />
+                    <SelectField field="MOLINETE" selected="True" />
+                    <SelectField field="ESTACION" selected="True" />
+                    <SelectField field="pax_pagos" selected="True" />
+                    <SelectField field="pax_pases_pagos" selected="True" />
+                    <SelectField field="pax_franq" selected="True" />
+                    <SelectField field="pax_TOTAL" selected="True" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="78" y="1974" width="542" height="237" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>2022 sin mes 9,11,12</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="34">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+                <Position x="103" y="2035" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Directory>C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2022</Directory>
+                  <FileSpec>*.*</FileSpec>
+                  <IncludeSubDirs value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>dir C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2022\*.*</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+            </Node>
+            <Node ToolID="35">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+                <Position x="199" y="2023" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <InputConfiguration>
+                    <Configuration>
+                      <Passwords />
+                      <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2022\202212_PAX15min-ABC.csv</File>
+                      <FormatSpecificOptions>
+                        <HeaderRow>True</HeaderRow>
+                        <IgnoreErrors>False</IgnoreErrors>
+                        <AllowShareWrite>False</AllowShareWrite>
+                        <ImportLine>1</ImportLine>
+                        <FieldLen>254</FieldLen>
+                        <SingleThreadRead>False</SingleThreadRead>
+                        <IgnoreQuotes>False</IgnoreQuotes>
+                        <Delimeter>;</Delimeter>
+                        <QuoteRecordBreak>False</QuoteRecordBreak>
+                        <CodePage>28591</CodePage>
+                      </FormatSpecificOptions>
+                    </Configuration>
+                  </InputConfiguration>
+                  <Mode>ReadList</Mode>
+                  <ReadList_Field>FullPath</ReadList_Field>
+                  <ReadList_Type>Path</ReadList_Type>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+            </Node>
+            <Node ToolID="36">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="271" y="2035" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="&quot;FECHA" selected="True" rename="FECHA" />
+                    <SelectField field="DESDE" selected="True" type="Time" size="8" />
+                    <SelectField field="HASTA" selected="True" type="Time" size="8" />
+                    <SelectField field="MOLINETE" selected="False" type="String" size="254" />
+                    <SelectField field="ESTACION" selected="True" type="String" size="254" />
+                    <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                    <SelectField field="pax_TOTAL&quot;" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                    <SelectField field="pax_TOTAL" selected="False" type="Int64" size="8" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="355" y="2035" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="ReplaceFirst([FECHA], '&quot;', &quot;&quot;)" field="FECHA" size="254" type="V_String" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[FECHA = ReplaceFirst([FECHA], '"', "")
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="38">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="247" y="2131" width="100" height="40" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Me faltan datos del mes 9, 11 y 12. Luego los agrego con los otros archivos</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+                <Position x="451" y="2035" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <IsFrom value="False" />
+                  <InputFieldName>FECHA</InputFieldName>
+                  <Language>English</Language>
+                  <Format>dd/MM/yyyy</Format>
+                  <OutputFieldName>FECHA</OutputFieldName>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Convert FECHA From:
+dd/MM/yyyy</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="537" y="2035" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="FECHA2" selected="True" rename="FECHA" />
+                    <SelectField field="FECHA" selected="False" />
+                    <SelectField field="DESDE" selected="True" />
+                    <SelectField field="HASTA" selected="True" />
+                    <SelectField field="LINEA" selected="True" />
+                    <SelectField field="MOLINETE" selected="True" />
+                    <SelectField field="ESTACION" selected="True" />
+                    <SelectField field="pax_pagos" selected="True" />
+                    <SelectField field="pax_pases_pagos" selected="True" />
+                    <SelectField field="pax_franq" selected="True" />
+                    <SelectField field="pax_TOTAL" selected="True" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="270" width="229" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2019</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="81" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>datahistorica122019.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="periodo" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="fecha" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="desde" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="hasta" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="linea" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="molinete" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="estacion" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="pax_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="pax_pases_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="pax_franq" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+                <Field name="total" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2019\datahistorica122019.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="201" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="periodo" selected="False" />
+                <SelectField field="fecha" selected="True" rename="FECHA" type="Date" size="10" />
+                <SelectField field="desde" selected="True" rename="DESDE" type="Time" size="8" />
+                <SelectField field="hasta" selected="True" rename="HASTA" type="Time" size="8" />
+                <SelectField field="linea" selected="True" rename="LINEA" type="WString" size="254" />
+                <SelectField field="molinete" selected="False" rename="MOLINETE" type="String" size="254" />
+                <SelectField field="estacion" selected="True" rename="ESTACION" type="String" size="254" />
+                <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                <SelectField field="total" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="356" y="2262" width="625" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2023</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+            <Position x="381" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Directory>C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2023</Directory>
+              <FileSpec>*.*</FileSpec>
+              <IncludeSubDirs value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dir C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2023\*.*</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+            <Position x="465" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2023\202310_PAX15min-ABC.csv</File>
+                  <FormatSpecificOptions>
+                    <HeaderRow>True</HeaderRow>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <ImportLine>1</ImportLine>
+                    <FieldLen>254</FieldLen>
+                    <SingleThreadRead>False</SingleThreadRead>
+                    <IgnoreQuotes>False</IgnoreQuotes>
+                    <Delimeter>;</Delimeter>
+                    <QuoteRecordBreak>False</QuoteRecordBreak>
+                    <CodePage>28591</CodePage>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <Mode>ReadList</Mode>
+              <ReadList_Field>FullPath</ReadList_Field>
+              <ReadList_Type>Path</ReadList_Type>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="537" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="&quot;FECHA" selected="True" rename="FECHA" />
+                <SelectField field="DESDE" selected="True" type="Time" size="8" />
+                <SelectField field="HASTA" selected="True" type="Time" size="8" />
+                <SelectField field="MOLINETE" selected="False" type="String" size="254" />
+                <SelectField field="ESTACION" selected="True" type="String" size="254" />
+                <SelectField field="pax_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_pases_pagos" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_franq" selected="False" type="Int64" size="8" />
+                <SelectField field="pax_TOTAL&quot;" selected="True" rename="pax_TOTAL" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="621" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="ReplaceFirst([FECHA], '&quot;', &quot;&quot;)" field="FECHA" size="254" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[FECHA = ReplaceFirst([FECHA], '"', "")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="705" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>FECHA</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>FECHA</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert FECHA From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="789" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="FECHA2" selected="True" rename="FECHA" />
+                <SelectField field="FECHA" selected="False" />
+                <SelectField field="DESDE" selected="True" />
+                <SelectField field="HASTA" selected="True" />
+                <SelectField field="LINEA" selected="True" />
+                <SelectField field="MOLINETE" selected="True" />
+                <SelectField field="ESTACION" selected="True" />
+                <SelectField field="pax_pagos" selected="True" />
+                <SelectField field="pax_pases_pagos" selected="True" />
+                <SelectField field="pax_franq" selected="True" />
+                <SelectField field="pax_TOTAL" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="897" y="2311" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_d3c3f2026c5847189542e1b0810903a0_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="187" y="462" width="926" height="480" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>molinetes-2020</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="921" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DateTime_Out" selected="True" rename="FECHA" />
+                <SelectField field="FECHA" selected="False" />
+                <SelectField field="DESDE" selected="True" />
+                <SelectField field="HASTA" selected="True" />
+                <SelectField field="LINEA" selected="True" />
+                <SelectField field="MOLINETE" selected="False" />
+                <SelectField field="ESTACION" selected="True" />
+                <SelectField field="pax_pagos" selected="False" />
+                <SelectField field="pax_pases_pagos" selected="False" />
+                <SelectField field="pax_franq" selected="False" />
+                <SelectField field="pax_TOTAL" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="813" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="573" y="811" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>FECHA</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert FECHA From:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="561" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>FECHA</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert FECHA From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="669" y="823" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_06495554e3644cf2b813fadaf3eed094_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings>
+            <Position x="453" y="811" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Ranges">4960771+</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="SelectRecords.yxmc" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="657" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_2efd0715c28d43db9e36952f472b678a_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings>
+            <Position x="477" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Ranges">2041692-4960771</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="SelectRecords.yxmc" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="465" y="727" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[hasta 4960771 el formato es MM/dd/yyyy
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="573" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>FECHA</InputFieldName>
+              <Language>English</Language>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert FECHA From:
+dd/MM/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="477" y="571" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>hasta aca el formato es dd/MM/yyyy</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings>
+            <Position x="465" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Ranges">-2041691</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="SelectRecords.yxmc" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="693" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_6a4639a5691643149d766ec888825ac6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="357" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="FECHA" selected="True" />
+                <Field field="DESDE" selected="True" />
+                <Field field="HASTA" selected="True" />
+                <Field field="LINEA" selected="True" />
+                <Field field="MOLINETE" selected="True" />
+                <Field field="ESTACION" selected="True" />
+                <Field field="pax_pagos" selected="True" />
+                <Field field="pax_pases_pagos" selected="True" />
+                <Field field="pax_franq" selected="True" />
+                <Field field="pax_TOTAL" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FECHA" size="10" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="String" />
+                <Field name="DESDE" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="Time" />
+                <Field name="HASTA" size="8" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="String" />
+                <Field name="LINEA" size="6" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="String" />
+                <Field name="MOLINETE" size="32" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="ESTACION" size="20" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="pax_pagos" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="Int16" />
+                <Field name="pax_pases_pagos" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="Byte" />
+                <Field name="pax_franq" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="Byte" />
+                <Field name="pax_TOTAL" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="212" y="679" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>historico2020.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="FECHA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="DESDE" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="HASTA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="LINEA" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="MOLINETE" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="ESTACION" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="pax_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="pax_pases_pagos" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="pax_franq" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+                <Field name="pax_TOTAL" size="254" source="File: C:\Users\tcabreraro001\Downloads\molinetes_subte\molinetes-2020\historico2020.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1029" y="667" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\TCABRE~1\AppData\Local\Temp\Engine_27856_fc636e8f51124c2e950530002c8a6318_\Engine_28212_27eba3250f8949078100aa74297cb546_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="True" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="63" Connection="False" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow subte</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6f43b0e0-a8e6-4ae1-8953-c3082835ead7" />
+      <Telemetry>
+        <PreviousWorkflowId value="585c5cf7-0b64-4ddb-b537-731196a40ec5" />
+        <OriginWorkflowId value="585c5cf7-0b64-4ddb-b537-731196a40ec5" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
